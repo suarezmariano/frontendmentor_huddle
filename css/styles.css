@@ -1,0 +1,17 @@
+:root {
+
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+
+    --font1: "Open Sans", sans-serif;
+    --font2: "Poppins", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: var(--font1);
+}
