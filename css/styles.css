@@ -42,8 +42,6 @@ body {
     max-width: 1200px;
     padding: var(--padding-container);
     position: relative;
-
-
 }
 
 .nav {
@@ -114,4 +112,45 @@ body {
 
 .hero_icon {
     width: 23px;
+}
+
+@media (min-width: 768px) {
+
+    .hero::before {
+        height: 100px;
+        background-image: url("../images/bg-desktop.svg");
+        background-size: 100% 100%;
+    }
+
+    .hero_container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        --padding-container: 20px 60px;
+
+    }
+
+    .hero_picture {
+        flex-basis: 45%;
+    }
+
+    .hero_texts {
+        flex-basis: 50%;
+        text-align: left;
+    }
+
+    .hero_contact {
+        margin-left: auto;
+    }
+
+    .hero_img {
+        max-width: unset;
+    }
+
+    .hero_title {
+        font-size: 2rem;
+        ;
+    }
+
 }
